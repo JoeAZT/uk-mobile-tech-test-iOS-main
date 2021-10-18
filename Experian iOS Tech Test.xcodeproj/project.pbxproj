@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A598B21F53AF785D0504EB3 /* Pods_Experian_iOS_Tech_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4E29FBC3F4927C673E9464 /* Pods_Experian_iOS_Tech_Test.framework */; };
+		1A8615CECFAC396234B99EDA /* Pods_Experian_iOS_Tech_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EC0ED34DE7243B0E8DF4F8 /* Pods_Experian_iOS_Tech_TestTests.framework */; };
+		B501ADD926D2E93B00967564 /* CoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501ADD726D2E93B00967564 /* CoffeeTableViewCell.swift */; };
+		B501ADDA26D2E93B00967564 /* CoffeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B501ADD826D2E93B00967564 /* CoffeeTableViewCell.xib */; };
+		B501ADDC26D2ECA600967564 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501ADDB26D2ECA600967564 /* Extensions.swift */; };
+		B501ADDE26D2F8AA00967564 /* CoffeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501ADDD26D2F8AA00967564 /* CoffeeDetailView.swift */; };
+		B501ADE026D2FDF900967564 /* CoffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501ADDF26D2FDF900967564 /* CoffeeTests.swift */; };
+		B501ADE226D301AB00967564 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501ADE126D301AB00967564 /* NetworkService.swift */; };
+		B501ADE426D3044100967564 /* CoffeeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501ADE326D3044100967564 /* CoffeeServiceTests.swift */; };
+		B569C6F426D3C1D8000DA34B /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569C6F326D3C1D8000DA34B /* RemoteImage.swift */; };
+		B5D1FCD726CFF302009140D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1FCD626CFF302009140D3 /* AppDelegate.swift */; };
+		B5D1FCD926CFF302009140D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1FCD826CFF302009140D3 /* SceneDelegate.swift */; };
+		B5D1FCDE26CFF302009140D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D1FCDC26CFF302009140D3 /* Main.storyboard */; };
+		B5D1FCE026CFF304009140D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D1FCDF26CFF304009140D3 /* Assets.xcassets */; };
+		B5D1FCE326CFF304009140D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D1FCE126CFF304009140D3 /* LaunchScreen.storyboard */; };
+		B5D1FCF926CFF305009140D3 /* Experian_iOS_Tech_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1FCF826CFF305009140D3 /* Experian_iOS_Tech_TestUITests.swift */; };
+		B5D1FD0826CFF69D009140D3 /* CoffeeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1FD0626CFF69D009140D3 /* CoffeeTableViewController.swift */; };
+		B5D1FD0926CFF69D009140D3 /* CoffeeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D1FD0726CFF69D009140D3 /* CoffeeTableViewController.xib */; };
+		B5D1FD0B26CFF81C009140D3 /* CoffeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1FD0A26CFF81C009140D3 /* CoffeeService.swift */; };
+		B5D1FD0F26CFF84F009140D3 /* CoffeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1FD0E26CFF84F009140D3 /* CoffeeViewModel.swift */; };
+		B5D1FD1126CFF874009140D3 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1FD1026CFF874009140D3 /* Coffee.swift */; };
+		BAF6C285581B2DD22B0F7F67 /* Pods_Experian_iOS_Tech_Test_Experian_iOS_Tech_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E387E8ED3223D96BA9D96F /* Pods_Experian_iOS_Tech_Test_Experian_iOS_Tech_TestUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5D1FCEA26CFF305009140D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5D1FCCB26CFF302009140D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5D1FCD226CFF302009140D3;
+			remoteInfo = "Experian iOS Tech Test";
+		};
+		B5D1FCF526CFF305009140D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5D1FCCB26CFF302009140D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5D1FCD226CFF302009140D3;
+			remoteInfo = "Experian iOS Tech Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0010D4AFF59DE6CB0370639A /* Pods-Experian iOS Tech TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experian iOS Tech TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Experian iOS Tech TestTests/Pods-Experian iOS Tech TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		58E387E8ED3223D96BA9D96F /* Pods_Experian_iOS_Tech_Test_Experian_iOS_Tech_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Experian_iOS_Tech_Test_Experian_iOS_Tech_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8D124E2A3386F574CA70D8 /* Pods-Experian iOS Tech TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experian iOS Tech TestTests.release.xcconfig"; path = "Target Support Files/Pods-Experian iOS Tech TestTests/Pods-Experian iOS Tech TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2B9FAF14D1591E627B64A37 /* Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests.release.xcconfig"; path = "Target Support Files/Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests/Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD4E29FBC3F4927C673E9464 /* Pods_Experian_iOS_Tech_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Experian_iOS_Tech_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B501ADD726D2E93B00967564 /* CoffeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewCell.swift; sourceTree = "<group>"; };
+		B501ADD826D2E93B00967564 /* CoffeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeTableViewCell.xib; sourceTree = "<group>"; };
+		B501ADDB26D2ECA600967564 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B501ADDD26D2F8AA00967564 /* CoffeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailView.swift; sourceTree = "<group>"; };
+		B501ADDF26D2FDF900967564 /* CoffeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTests.swift; sourceTree = "<group>"; };
+		B501ADE126D301AB00967564 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B501ADE326D3044100967564 /* CoffeeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeServiceTests.swift; sourceTree = "<group>"; };
+		B569C6F326D3C1D8000DA34B /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		B5D1FCD326CFF302009140D3 /* Experian iOS Tech Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Experian iOS Tech Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D1FCD626CFF302009140D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5D1FCD826CFF302009140D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5D1FCDD26CFF302009140D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5D1FCDF26CFF304009140D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5D1FCE226CFF304009140D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5D1FCE426CFF304009140D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D1FCE926CFF305009140D3 /* Experian iOS Tech TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Experian iOS Tech TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D1FCEF26CFF305009140D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D1FCF426CFF305009140D3 /* Experian iOS Tech TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Experian iOS Tech TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D1FCF826CFF305009140D3 /* Experian_iOS_Tech_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experian_iOS_Tech_TestUITests.swift; sourceTree = "<group>"; };
+		B5D1FCFA26CFF305009140D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D1FD0626CFF69D009140D3 /* CoffeeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewController.swift; sourceTree = "<group>"; };
+		B5D1FD0726CFF69D009140D3 /* CoffeeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeTableViewController.xib; sourceTree = "<group>"; };
+		B5D1FD0A26CFF81C009140D3 /* CoffeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeService.swift; sourceTree = "<group>"; };
+		B5D1FD0E26CFF84F009140D3 /* CoffeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewModel.swift; sourceTree = "<group>"; };
+		B5D1FD1026CFF874009140D3 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		B6EC0ED34DE7243B0E8DF4F8 /* Pods_Experian_iOS_Tech_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Experian_iOS_Tech_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3D1E49B83A4B2EF6111962 /* Pods-Experian iOS Tech Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experian iOS Tech Test.release.xcconfig"; path = "Target Support Files/Pods-Experian iOS Tech Test/Pods-Experian iOS Tech Test.release.xcconfig"; sourceTree = "<group>"; };
+		D9B435474D54A8A90573DE5C /* Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests/Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9BCE58F48923985E63185E2 /* Pods-Experian iOS Tech Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experian iOS Tech Test.debug.xcconfig"; path = "Target Support Files/Pods-Experian iOS Tech Test/Pods-Experian iOS Tech Test.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5D1FCD026CFF302009140D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A598B21F53AF785D0504EB3 /* Pods_Experian_iOS_Tech_Test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D1FCE626CFF305009140D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8615CECFAC396234B99EDA /* Pods_Experian_iOS_Tech_TestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D1FCF126CFF305009140D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF6C285581B2DD22B0F7F67 /* Pods_Experian_iOS_Tech_Test_Experian_iOS_Tech_TestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DD89A7DA36F9BC443639E46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD4E29FBC3F4927C673E9464 /* Pods_Experian_iOS_Tech_Test.framework */,
+				58E387E8ED3223D96BA9D96F /* Pods_Experian_iOS_Tech_Test_Experian_iOS_Tech_TestUITests.framework */,
+				B6EC0ED34DE7243B0E8DF4F8 /* Pods_Experian_iOS_Tech_TestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B569C6F126D3B3BE000DA34B /* Coffee Details */ = {
+			isa = PBXGroup;
+			children = (
+				B501ADDD26D2F8AA00967564 /* CoffeeDetailView.swift */,
+			);
+			path = "Coffee Details";
+			sourceTree = "<group>";
+		};
+		B569C6F226D3C1BA000DA34B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B501ADDB26D2ECA600967564 /* Extensions.swift */,
+				B569C6F326D3C1D8000DA34B /* RemoteImage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B5D1FCCA26CFF302009140D3 = {
+			isa = PBXGroup;
+			children = (
+				B5D1FCD526CFF302009140D3 /* Experian iOS Tech Test */,
+				B5D1FCEC26CFF305009140D3 /* Experian iOS Tech TestTests */,
+				B5D1FCF726CFF305009140D3 /* Experian iOS Tech TestUITests */,
+				B5D1FCD426CFF302009140D3 /* Products */,
+				BEF1A2BCEA2D3A945FAFE242 /* Pods */,
+				8DD89A7DA36F9BC443639E46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5D1FCD426CFF302009140D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5D1FCD326CFF302009140D3 /* Experian iOS Tech Test.app */,
+				B5D1FCE926CFF305009140D3 /* Experian iOS Tech TestTests.xctest */,
+				B5D1FCF426CFF305009140D3 /* Experian iOS Tech TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5D1FCD526CFF302009140D3 /* Experian iOS Tech Test */ = {
+			isa = PBXGroup;
+			children = (
+				B5D1FCD626CFF302009140D3 /* AppDelegate.swift */,
+				B5D1FCD826CFF302009140D3 /* SceneDelegate.swift */,
+				B5D1FCDC26CFF302009140D3 /* Main.storyboard */,
+				B5D1FCDF26CFF304009140D3 /* Assets.xcassets */,
+				B5D1FCE126CFF304009140D3 /* LaunchScreen.storyboard */,
+				B5D1FCE426CFF304009140D3 /* Info.plist */,
+				B5D1FD0D26CFF834009140D3 /* Coffee List */,
+				B569C6F126D3B3BE000DA34B /* Coffee Details */,
+				B5D1FD0C26CFF821009140D3 /* Services */,
+				B569C6F226D3C1BA000DA34B /* Helpers */,
+			);
+			path = "Experian iOS Tech Test";
+			sourceTree = "<group>";
+		};
+		B5D1FCEC26CFF305009140D3 /* Experian iOS Tech TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5D1FCEF26CFF305009140D3 /* Info.plist */,
+				B501ADDF26D2FDF900967564 /* CoffeeTests.swift */,
+				B501ADE326D3044100967564 /* CoffeeServiceTests.swift */,
+			);
+			path = "Experian iOS Tech TestTests";
+			sourceTree = "<group>";
+		};
+		B5D1FCF726CFF305009140D3 /* Experian iOS Tech TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5D1FCF826CFF305009140D3 /* Experian_iOS_Tech_TestUITests.swift */,
+				B5D1FCFA26CFF305009140D3 /* Info.plist */,
+			);
+			path = "Experian iOS Tech TestUITests";
+			sourceTree = "<group>";
+		};
+		B5D1FD0C26CFF821009140D3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5D1FD0A26CFF81C009140D3 /* CoffeeService.swift */,
+				B501ADE126D301AB00967564 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B5D1FD0D26CFF834009140D3 /* Coffee List */ = {
+			isa = PBXGroup;
+			children = (
+				B5D1FD0626CFF69D009140D3 /* CoffeeTableViewController.swift */,
+				B5D1FD0726CFF69D009140D3 /* CoffeeTableViewController.xib */,
+				B5D1FD0E26CFF84F009140D3 /* CoffeeViewModel.swift */,
+				B5D1FD1226CFF87C009140D3 /* Model */,
+				B501ADD726D2E93B00967564 /* CoffeeTableViewCell.swift */,
+				B501ADD826D2E93B00967564 /* CoffeeTableViewCell.xib */,
+			);
+			path = "Coffee List";
+			sourceTree = "<group>";
+		};
+		B5D1FD1226CFF87C009140D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5D1FD1026CFF874009140D3 /* Coffee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEF1A2BCEA2D3A945FAFE242 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9BCE58F48923985E63185E2 /* Pods-Experian iOS Tech Test.debug.xcconfig */,
+				BF3D1E49B83A4B2EF6111962 /* Pods-Experian iOS Tech Test.release.xcconfig */,
+				D9B435474D54A8A90573DE5C /* Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests.debug.xcconfig */,
+				A2B9FAF14D1591E627B64A37 /* Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests.release.xcconfig */,
+				0010D4AFF59DE6CB0370639A /* Pods-Experian iOS Tech TestTests.debug.xcconfig */,
+				5A8D124E2A3386F574CA70D8 /* Pods-Experian iOS Tech TestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5D1FCD226CFF302009140D3 /* Experian iOS Tech Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D1FCFD26CFF305009140D3 /* Build configuration list for PBXNativeTarget "Experian iOS Tech Test" */;
+			buildPhases = (
+				D4249A5E8E2D766B40B960AC /* [CP] Check Pods Manifest.lock */,
+				B5D1FCCF26CFF302009140D3 /* Sources */,
+				B5D1FCD026CFF302009140D3 /* Frameworks */,
+				B5D1FCD126CFF302009140D3 /* Resources */,
+				B342796CD13A48F578CDC02A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Experian iOS Tech Test";
+			productName = "Experian iOS Tech Test";
+			productReference = B5D1FCD326CFF302009140D3 /* Experian iOS Tech Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5D1FCE826CFF305009140D3 /* Experian iOS Tech TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D1FD0026CFF305009140D3 /* Build configuration list for PBXNativeTarget "Experian iOS Tech TestTests" */;
+			buildPhases = (
+				B84E2B1754EB25C66656BF09 /* [CP] Check Pods Manifest.lock */,
+				B5D1FCE526CFF305009140D3 /* Sources */,
+				B5D1FCE626CFF305009140D3 /* Frameworks */,
+				B5D1FCE726CFF305009140D3 /* Resources */,
+				99AC055F6864E279FEC43AA8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5D1FCEB26CFF305009140D3 /* PBXTargetDependency */,
+			);
+			name = "Experian iOS Tech TestTests";
+			productName = "Experian iOS Tech TestTests";
+			productReference = B5D1FCE926CFF305009140D3 /* Experian iOS Tech TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5D1FCF326CFF305009140D3 /* Experian iOS Tech TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D1FD0326CFF305009140D3 /* Build configuration list for PBXNativeTarget "Experian iOS Tech TestUITests" */;
+			buildPhases = (
+				DEBC47A2BA96044CB7B85D98 /* [CP] Check Pods Manifest.lock */,
+				B5D1FCF026CFF305009140D3 /* Sources */,
+				B5D1FCF126CFF305009140D3 /* Frameworks */,
+				B5D1FCF226CFF305009140D3 /* Resources */,
+				F4D474FE918ADBBC2F11D047 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5D1FCF626CFF305009140D3 /* PBXTargetDependency */,
+			);
+			name = "Experian iOS Tech TestUITests";
+			productName = "Experian iOS Tech TestUITests";
+			productReference = B5D1FCF426CFF305009140D3 /* Experian iOS Tech TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5D1FCCB26CFF302009140D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B5D1FCD226CFF302009140D3 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					B5D1FCE826CFF305009140D3 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B5D1FCD226CFF302009140D3;
+					};
+					B5D1FCF326CFF305009140D3 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B5D1FCD226CFF302009140D3;
+					};
+				};
+			};
+			buildConfigurationList = B5D1FCCE26CFF302009140D3 /* Build configuration list for PBXProject "Experian iOS Tech Test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5D1FCCA26CFF302009140D3;
+			productRefGroup = B5D1FCD426CFF302009140D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5D1FCD226CFF302009140D3 /* Experian iOS Tech Test */,
+				B5D1FCE826CFF305009140D3 /* Experian iOS Tech TestTests */,
+				B5D1FCF326CFF305009140D3 /* Experian iOS Tech TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5D1FCD126CFF302009140D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D1FCE326CFF304009140D3 /* LaunchScreen.storyboard in Resources */,
+				B5D1FD0926CFF69D009140D3 /* CoffeeTableViewController.xib in Resources */,
+				B501ADDA26D2E93B00967564 /* CoffeeTableViewCell.xib in Resources */,
+				B5D1FCE026CFF304009140D3 /* Assets.xcassets in Resources */,
+				B5D1FCDE26CFF302009140D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D1FCE726CFF305009140D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D1FCF226CFF305009140D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99AC055F6864E279FEC43AA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Experian iOS Tech TestTests/Pods-Experian iOS Tech TestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Experian iOS Tech TestTests/Pods-Experian iOS Tech TestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Experian iOS Tech TestTests/Pods-Experian iOS Tech TestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B342796CD13A48F578CDC02A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Experian iOS Tech Test/Pods-Experian iOS Tech Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Experian iOS Tech Test/Pods-Experian iOS Tech Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Experian iOS Tech Test/Pods-Experian iOS Tech Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B84E2B1754EB25C66656BF09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Experian iOS Tech TestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4249A5E8E2D766B40B960AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Experian iOS Tech Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEBC47A2BA96044CB7B85D98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D474FE918ADBBC2F11D047 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests/Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests/Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests/Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5D1FCCF26CFF302009140D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B501ADE226D301AB00967564 /* NetworkService.swift in Sources */,
+				B501ADD926D2E93B00967564 /* CoffeeTableViewCell.swift in Sources */,
+				B5D1FD0826CFF69D009140D3 /* CoffeeTableViewController.swift in Sources */,
+				B5D1FCD726CFF302009140D3 /* AppDelegate.swift in Sources */,
+				B569C6F426D3C1D8000DA34B /* RemoteImage.swift in Sources */,
+				B501ADDE26D2F8AA00967564 /* CoffeeDetailView.swift in Sources */,
+				B5D1FD0F26CFF84F009140D3 /* CoffeeViewModel.swift in Sources */,
+				B5D1FCD926CFF302009140D3 /* SceneDelegate.swift in Sources */,
+				B5D1FD0B26CFF81C009140D3 /* CoffeeService.swift in Sources */,
+				B501ADDC26D2ECA600967564 /* Extensions.swift in Sources */,
+				B5D1FD1126CFF874009140D3 /* Coffee.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D1FCE526CFF305009140D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B501ADE026D2FDF900967564 /* CoffeeTests.swift in Sources */,
+				B501ADE426D3044100967564 /* CoffeeServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D1FCF026CFF305009140D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D1FCF926CFF305009140D3 /* Experian_iOS_Tech_TestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5D1FCEB26CFF305009140D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5D1FCD226CFF302009140D3 /* Experian iOS Tech Test */;
+			targetProxy = B5D1FCEA26CFF305009140D3 /* PBXContainerItemProxy */;
+		};
+		B5D1FCF626CFF305009140D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5D1FCD226CFF302009140D3 /* Experian iOS Tech Test */;
+			targetProxy = B5D1FCF526CFF305009140D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5D1FCDC26CFF302009140D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5D1FCDD26CFF302009140D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5D1FCE126CFF304009140D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5D1FCE226CFF304009140D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5D1FCFB26CFF305009140D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5D1FCFC26CFF305009140D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5D1FCFE26CFF305009140D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9BCE58F48923985E63185E2 /* Pods-Experian iOS Tech Test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8HB64Q55C;
+				INFOPLIST_FILE = "Experian iOS Tech Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.experian.Experian-iOS-Tech-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5D1FCFF26CFF305009140D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF3D1E49B83A4B2EF6111962 /* Pods-Experian iOS Tech Test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8HB64Q55C;
+				INFOPLIST_FILE = "Experian iOS Tech Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.experian.Experian-iOS-Tech-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5D1FD0126CFF305009140D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0010D4AFF59DE6CB0370639A /* Pods-Experian iOS Tech TestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8HB64Q55C;
+				INFOPLIST_FILE = "Experian iOS Tech TestTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.experian.Experian-iOS-Tech-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Experian iOS Tech Test.app/Experian iOS Tech Test";
+			};
+			name = Debug;
+		};
+		B5D1FD0226CFF305009140D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A8D124E2A3386F574CA70D8 /* Pods-Experian iOS Tech TestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8HB64Q55C;
+				INFOPLIST_FILE = "Experian iOS Tech TestTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.experian.Experian-iOS-Tech-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Experian iOS Tech Test.app/Experian iOS Tech Test";
+			};
+			name = Release;
+		};
+		B5D1FD0426CFF305009140D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9B435474D54A8A90573DE5C /* Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8HB64Q55C;
+				INFOPLIST_FILE = "Experian iOS Tech TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.experian.Experian-iOS-Tech-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Experian iOS Tech Test";
+			};
+			name = Debug;
+		};
+		B5D1FD0526CFF305009140D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2B9FAF14D1591E627B64A37 /* Pods-Experian iOS Tech Test-Experian iOS Tech TestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8HB64Q55C;
+				INFOPLIST_FILE = "Experian iOS Tech TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.experian.Experian-iOS-Tech-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Experian iOS Tech Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5D1FCCE26CFF302009140D3 /* Build configuration list for PBXProject "Experian iOS Tech Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D1FCFB26CFF305009140D3 /* Debug */,
+				B5D1FCFC26CFF305009140D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D1FCFD26CFF305009140D3 /* Build configuration list for PBXNativeTarget "Experian iOS Tech Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D1FCFE26CFF305009140D3 /* Debug */,
+				B5D1FCFF26CFF305009140D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D1FD0026CFF305009140D3 /* Build configuration list for PBXNativeTarget "Experian iOS Tech TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D1FD0126CFF305009140D3 /* Debug */,
+				B5D1FD0226CFF305009140D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D1FD0326CFF305009140D3 /* Build configuration list for PBXNativeTarget "Experian iOS Tech TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D1FD0426CFF305009140D3 /* Debug */,
+				B5D1FD0526CFF305009140D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5D1FCCB26CFF302009140D3 /* Project object */;
+}
