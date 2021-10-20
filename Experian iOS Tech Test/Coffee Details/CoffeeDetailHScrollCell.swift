@@ -23,7 +23,7 @@ struct CoffeeDetailHScrollCell: View {
         .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
-                    .stroke(Color.blue, lineWidth: 2)
+                    .stroke(Color.black, lineWidth: 2)
             )
     }
 }

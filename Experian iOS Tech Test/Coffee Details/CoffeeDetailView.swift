@@ -32,18 +32,18 @@ struct CoffeeDetailView: View {
                     
                     ScrollView(.horizontal) {
                         HStack {
-                            CoffeeDetailHScrollCell(topText: "Strength", mainText: "5")
-                            CoffeeDetailHScrollCell(topText: "Flavour", mainText: "8")
-                            CoffeeDetailHScrollCell(topText: "Milk", mainText: "Optional")
-                            CoffeeDetailHScrollCell(topText: "Score", mainText: "20.0")
+                            CoffeeDetailHScrollCell(topText: "Strength", mainText: String(coffee.strength))
+                            CoffeeDetailHScrollCell(topText: "Flavour", mainText: String(coffee.flavour))
+                            CoffeeDetailHScrollCell(topText: "Milk", mainText: coffee.milk.capitalized)
+                            CoffeeDetailHScrollCell(topText: "Score", mainText: String(coffee.score ?? 0.00))
                         }
                     }
                     Text("Summary")
                         .font(.system(size: 30, weight: .semibold, design: .default))
                         .padding()
-                    Text("This is a coffee detail view")
+                    Text(coffee.summary)
                 }
-            }
+            }.navigationTitle(coffee.name)
         }
     }
 }
@@ -56,7 +56,9 @@ struct CoffeeDetailView_Previews: PreviewProvider {
          Caffè Americano is a type of coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from, traditionally brewed coffee. The strength of an Americano varies with the number of shots of espresso and the amount of water added.
          */
 
-        CoffeeDetailView(coffee: Coffee(id: 1, name: "Americano", imageResource: "coffee_americano.png", imageBackground: "#FFB72CFF"))
+//        CoffeeDetailView(coffee: Coffee(id: 1, name: "Americano", imageResource: "coffee_americano.png", imageBackground: "#FFB72CFF"))
+        
+        CoffeeDetailView(coffee: Coffee(id: 1, name: "Americano", imageResource: "coffee_americano.png", imageBackground: "#FFB72CFF", strength: 8, flavour: 8, milk: "yes", summary: "Nice coffee", tags: ["Very popular", "great taste"]))
     }
 }
 

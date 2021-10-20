@@ -53,8 +53,10 @@ class CoffeeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeTableViewCell", for: indexPath) as! CoffeeTableViewCell
-        let colorFromHex = UIColor.init(hex: "#AD7E7EFF")
-        let imageURL = URL(string: "https://experian-tech-test.herokuapp.com/images/coffee_mocha.png")
+        let coffee = self.coffees[indexPath.row]
+        cell.titleLabel.text = coffee.name
+        let colorFromHex = UIColor.init(hex: coffee.imageBackground)
+        let imageURL = URL(string: coffee.imageResource)
         return cell
     }
 
@@ -63,7 +65,9 @@ class CoffeeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let swiftUIView = CoffeeDetailView(coffee: Coffee(id: 1, name: "Americano", imageResource: "coffee_americano.png", imageBackground: "#FFB72CFF"))
+//        let swiftUIView = CoffeeDetailView(coffee: Coffee(id: 1, name: "Americano", imageResource: "coffee_americano.png", imageBackground: "#FFB72CFF", strength: 8, flavour: 8, milk: "yes", summary: "Nice coffee", tags: ["Very popular", "great taste"]))
+        let swiftUIView = CoffeeDetailView(coffee: self.coffees[indexPath.row])
+        
         let hostingController = UIHostingController(rootView: swiftUIView)
         present(hostingController, animated: true, completion: nil)
     }
