@@ -19,5 +19,20 @@ struct Coffee: Codable {
     /// Score can be 0
     /// Score has a max limit of 20
     /// Score is calculated by adding strength plus flavour, multiplied by 1 if it's "yes" milk, multiplied by 1.5 if milk is "optional" and multiplied by 2 if milk is "no"
-    var score: Double?
+    ///
+    var score: Double? {
+       if milk == "optional" {
+           return Double(strength * flavour) * 1.5
+        } else if milk == "no" {
+            return Double(strength * flavour) * 2
+        } else {
+            return Double(strength * flavour)
+        }
+    }
+    
+    var strength: Int
+    var flavour: Int
+    var milk: String
+    var summary: String
+    var tags: [String]
 }
