@@ -18,7 +18,7 @@ struct Coffee: Codable {
     var summary: String
     var tags: [String]
     
-    var score: Double? {
+    var score: Double {
        if milk == "optional" {
            return Double(strength * flavour) * 1.5
         } else if milk == "no" {

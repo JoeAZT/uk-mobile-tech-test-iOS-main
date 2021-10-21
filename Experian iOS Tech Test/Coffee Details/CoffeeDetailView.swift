@@ -18,30 +18,33 @@ struct CoffeeDetailView: View {
                     
                     ZStack {
                         Rectangle()
-                            .fill(Color.red)
+                            .fill(Color(coffee.imageBackground))
                             .frame(width: .infinity, height: 300)
                         
-                        RemoteImage(url: "https://experian-tech-test.herokuapp.com/images/coffee_americano.png")
+                        RemoteImage(url: coffee.imageResource)
                             .aspectRatio(contentMode: .fit)
                             .padding()
                             .frame(height: 256, alignment: .center)
                     }
+                    VStack {
                     Text("Statistics")
                         .font(.system(size: 30, weight: .semibold, design: .default))
-                        .padding()
+                         
                     
                     ScrollView(.horizontal) {
                         HStack {
                             CoffeeDetailHScrollCell(topText: "Strength", mainText: String(coffee.strength))
                             CoffeeDetailHScrollCell(topText: "Flavour", mainText: String(coffee.flavour))
                             CoffeeDetailHScrollCell(topText: "Milk", mainText: coffee.milk.capitalized)
-                            CoffeeDetailHScrollCell(topText: "Score", mainText: String(coffee.score ?? 0.00))
+                            CoffeeDetailHScrollCell(topText: "Score", mainText: String(coffee.score))
                         }
                     }
                     Text("Summary")
                         .font(.system(size: 30, weight: .semibold, design: .default))
                         .padding()
                     Text(coffee.summary)
+                    }
+                    .padding(.horizontal)
                 }
             }.navigationTitle(coffee.name)
         }

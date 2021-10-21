@@ -9,10 +9,15 @@ import UIKit
 
 class CoffeeTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var borderLine: UIView!
     @IBOutlet weak var coffeeImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var background: UIView!
 
+    @IBOutlet weak var strengthLabel: UILabel!
+    @IBOutlet weak var flavourLabel: UILabel!
+    @IBOutlet weak var milkLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
 
     override func awakeFromNib() {

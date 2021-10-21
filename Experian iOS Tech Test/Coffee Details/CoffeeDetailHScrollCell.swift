@@ -20,7 +20,7 @@ struct CoffeeDetailHScrollCell: View {
             Text(mainText)
                 .font(.system(size: 30, weight: .bold, design: .default))
         }
-        .padding()
+        .padding(30)
             .overlay(
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(Color.black, lineWidth: 2)

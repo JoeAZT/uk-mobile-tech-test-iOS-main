@@ -55,8 +55,13 @@ class CoffeeTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeTableViewCell", for: indexPath) as! CoffeeTableViewCell
         let coffee = self.coffees[indexPath.row]
         cell.titleLabel.text = coffee.name
-        let colorFromHex = UIColor.init(hex: coffee.imageBackground)
-        let imageURL = URL(string: coffee.imageResource)
+        cell.background.backgroundColor = UIColor.init(hex: coffee.imageBackground)
+        cell.borderLine.backgroundColor = UIColor.init(hex: coffee.imageBackground)
+        cell.strengthLabel.text = "Strength: \(coffee.strength)"
+        cell.flavourLabel.text = "Flavour: \(coffee.flavour)"
+        cell.milkLabel.text = "Milk: \(coffee.milk.capitalized)"
+        cell.scoreLabel.text = "Score: \(coffee.score)"
+//        cell.coffeeImageView.image = RemoteImage(url: coffee.imageResource)
         return cell
     }
 
@@ -65,7 +70,6 @@ class CoffeeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let swiftUIView = CoffeeDetailView(coffee: Coffee(id: 1, name: "Americano", imageResource: "coffee_americano.png", imageBackground: "#FFB72CFF", strength: 8, flavour: 8, milk: "yes", summary: "Nice coffee", tags: ["Very popular", "great taste"]))
         let swiftUIView = CoffeeDetailView(coffee: self.coffees[indexPath.row])
         
         let hostingController = UIHostingController(rootView: swiftUIView)
