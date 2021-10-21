@@ -24,9 +24,19 @@ class CoffeeService {
     func fetchCoffees() -> Observable<[Coffee]> {
         return NetworkService()
             .request(url: apiURL)
-            .map({ (_, json) in
-                return try! JSONDecoder().decode([Coffee].self, from: json)
-            })
+            .map { response, json in
+                // unavailable == 503
+                if response.statusCode == 503 {
+                    throw CoffeeServiceError.networkError
+                }
+                
+                do {
+                    return try JSONDecoder().decode([Coffee].self, from: json)
+                } catch {
+                    throw CoffeeServiceError.parsingError
+                }
+                
+            }
     }
 }
 

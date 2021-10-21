@@ -19,25 +19,20 @@ struct Coffee: Codable {
     var tags: [String]
     
     var score: Double {
-       if milk == "optional" {
-           let answer = Double(strength + flavour) * 1.5
-           if answer > 20 {
-               return 20
-           } else {
-               return answer
-           }
-           
-        } else if milk == "no" {
-            let answer = Double(strength + flavour) * 2.0
-            if answer > 20 {
-                return 20
-            } else {
-                return answer
-            }
-            
-        } else {
-            return Double(strength + flavour)
+        let baseScore = Double(strength + flavour)
+        
+        let multiplier: Double
+        switch milk {
+        case "optional":
+            multiplier = 1.5
+        case "no":
+            multiplier = 2
+        default:
+            multiplier = 1
         }
+        
+        let score = baseScore * multiplier
+        return min(score, 20)
     }
 }
 
