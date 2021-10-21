@@ -18,10 +18,9 @@ struct CoffeeDetailView: View {
                     
                     ZStack {
                         Rectangle()
-                            .fill(Color(coffee.imageBackground))
-//
-                        
+                            .foregroundColor(Color(UIColor.init(hex: coffee.imageBackground) ?? .red))
                             .frame(width: .infinity, height: 300)
+                        
                         
                         RemoteImage(url: coffee.imageResource)
                             .aspectRatio(contentMode: .fit)
