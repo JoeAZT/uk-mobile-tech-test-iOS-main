@@ -19,6 +19,8 @@ struct CoffeeDetailView: View {
                     ZStack {
                         Rectangle()
                             .fill(Color(coffee.imageBackground))
+//
+                        
                             .frame(width: .infinity, height: 300)
                         
                         RemoteImage(url: coffee.imageResource)
