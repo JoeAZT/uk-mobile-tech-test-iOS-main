@@ -20,9 +20,21 @@ struct Coffee: Codable {
     
     var score: Double {
        if milk == "optional" {
-           return Double(strength + flavour) * 1.5
+           let answer = Double(strength + flavour) * 1.5
+           if answer > 20 {
+               return 20
+           } else {
+               return answer
+           }
+           
         } else if milk == "no" {
-            return Double(strength + flavour) * 2
+            let answer = Double(strength + flavour) * 2.0
+            if answer > 20 {
+                return 20
+            } else {
+                return answer
+            }
+            
         } else {
             return Double(strength + flavour)
         }
