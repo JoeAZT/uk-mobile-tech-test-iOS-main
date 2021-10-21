@@ -62,7 +62,6 @@ class CoffeeTableViewController: UITableViewController {
         cell.milkLabel.text = "Milk: \(coffee.milk.capitalized)"
         cell.scoreLabel.text = "Score: \(coffee.score)"
         cell.coffeeImageView.load(url: URL(string: "https://experian-tech-test.herokuapp.com/images/\(coffee.imageResource)")!)
-//        cell.coffeeImageView.image = UIImageView(UIImage.load(url: "https://experian-tech-test.herokuapp.com/images/\(coffee.imageResource)"))
     
         return cell
     }
