@@ -61,7 +61,8 @@ class CoffeeTableViewController: UITableViewController {
         cell.flavourLabel.text = "Flavour: \(coffee.flavour)"
         cell.milkLabel.text = "Milk: \(coffee.milk.capitalized)"
         cell.scoreLabel.text = "Score: \(coffee.score)"
-//        cell.coffeeImageView.image = RemoteImage(url: coffee.imageResource)
+//
+        
         return cell
     }
 

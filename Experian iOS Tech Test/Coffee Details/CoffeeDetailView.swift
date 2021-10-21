@@ -22,7 +22,7 @@ struct CoffeeDetailView: View {
                             .frame(width: .infinity, height: 300)
                         
                         
-                        RemoteImage(url: coffee.imageResource)
+                        RemoteImage(url: "https://experian-tech-test.herokuapp.com/images/\(coffee.imageResource)")
                             .aspectRatio(contentMode: .fit)
                             .padding()
                             .frame(height: 256, alignment: .center)
