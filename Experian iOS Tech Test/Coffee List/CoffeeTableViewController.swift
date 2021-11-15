@@ -42,7 +42,7 @@ class CoffeeTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 6
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,7 +62,7 @@ class CoffeeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let swiftUIView = CoffeeDetailView(coffee: Coffee(id: 1, name: "Americano", imageResource: "coffee_americano.png", imageBackground: "#FFB72CFF"))
+        let swiftUIView = CoffeeDetailView(coffee: Coffee(id: 1, name: "Americano", imageBackground: "coffee_americano.png", strength: 5, flavour: 5, summary: "Thats an awfully hot coffee pot", tags: ["Hot", "Coffee", "Pot"], milk: "no"))
         let hostingController = UIHostingController(rootView: swiftUIView)
         present(hostingController, animated: true, completion: nil)
     }

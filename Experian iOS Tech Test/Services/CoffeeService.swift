@@ -16,7 +16,7 @@ enum CoffeeServiceError: Error {
 
 class CoffeeService {
 
-    let apiURL = "https://experian-tech-test.herokuapp.com/api/v1/coffee"
+    let apiURL = "https://experian-tech-test.herokuapp.com/api/v2/coffee"
     var disposeBag = DisposeBag()
 
     /// CoffeeService should return an parsing error if the json cannot be serialised
