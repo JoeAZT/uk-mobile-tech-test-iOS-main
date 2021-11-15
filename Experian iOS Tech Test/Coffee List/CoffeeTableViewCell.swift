@@ -12,11 +12,11 @@ class CoffeeTableViewCell: UITableViewCell {
     @IBOutlet weak var coffeeImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var background: UIView!
-
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
