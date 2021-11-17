@@ -47,13 +47,13 @@ class CoffeeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return coffees.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeTableViewCell", for: indexPath) as! CoffeeTableViewCell
-        let colorFromHex = UIColor.init(hex: "#AD7E7EFF")
-        let imageURL = URL(string: "https://experian-tech-test.herokuapp.com/images/coffee_mocha.png")
+        let colorFromHex = UIColor.init(hex: (self.coffees[indexPath.row].imageBackground))
+        let imageURL = URL(string: "https://experian-tech-test.herokuapp.com/images/\(self.coffees[indexPath.row].imageResource)")
         return cell
     }
 
@@ -62,7 +62,7 @@ class CoffeeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let swiftUIView = CoffeeDetailView(coffee: Coffee(id: 1, name: "Americano", imageBackground: "coffee_americano.png", strength: 5, flavour: 5, summary: "Thats an awfully hot coffee pot", tags: ["Hot", "Coffee", "Pot"], milk: "no"))
+        let swiftUIView = CoffeeDetailView(coffee: self.coffees[indexPath.row])
         let hostingController = UIHostingController(rootView: swiftUIView)
         present(hostingController, animated: true, completion: nil)
     }

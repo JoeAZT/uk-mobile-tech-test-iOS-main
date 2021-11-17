@@ -11,6 +11,7 @@ struct Coffee: Codable {
     var id: Int
     var name: String
     var imageBackground: String
+    var imageResource: String
     var strength: Int
     var flavour: Int
     var summary: String
